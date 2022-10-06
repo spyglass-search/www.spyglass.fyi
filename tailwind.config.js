@@ -1,11 +1,6 @@
 module.exports = {
   content: ["dist/**/*.{html,js}"],
   theme: {
-    colors: {
-      secondary: "#F4F2ED",
-      black: "black",
-      white: "white",
-    },
     fontFamily: {
       "pt-serif": ["PT Serif", "serif"],
       montserrat: ["Montserrat", "sans-serif"],
@@ -17,6 +12,11 @@ module.exports = {
       "100%": "100%",
     },
     extend: {
+      colors: {
+        secondary: "#F4F2ED",
+        black: "black",
+        white: "white",
+      },
       keyframes: {
         "fade-in-down": {
           "0%": {
