@@ -1,0 +1,23 @@
+{
+  "name": "spyglass-landing",
+  "version": "1.0.0",
+  "description": "Landing page (https://www.spyglass.fyi) for Spyglass app & the entire organization.",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spyglass-search/www.spyglass.fyi.git"
+  },
+  "author": "andrew@spyglass.fyi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/spyglass-search/www.spyglass.fyi/issues"
+  },
+  "homepage": "https://github.com/spyglass-search/www.spyglass.fyi#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.1.8"
+  }
+}
