@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/spyglass-search/www.spyglass.fyi#readme",
   "devDependencies": {
+    "@tailwindcss/forms": "^0.5.3",
     "tailwindcss": "^3.1.8"
   }
 }

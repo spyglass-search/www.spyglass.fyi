@@ -1,5 +1,5 @@
 module.exports = {
-  content: ["dist/**/*.{html,js}", "index.html"],
+  content: ["dist/**/*.js", "index.html"],
   theme: {
     fontFamily: {
       "pt-serif": ["PT Serif", "serif"],
@@ -37,5 +37,7 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms')
+  ],
 };
