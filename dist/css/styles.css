@@ -1289,10 +1289,6 @@ select{
     width: 66.666667%;
   }
 
-  .lg\:w-1\/2{
-    width: 50%;
-  }
-
   .lg\:px-48{
     padding-left: 12rem;
     padding-right: 12rem;
