@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Spyglass</title>
-    <link rel="stylesheet" href="css/styles.css" />
-    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="{{ get_url(path='css/styles.css') }}" />
+    <script src="{{ get_url(path='js/script.js') }}"></script>
   </head>
 
   <body>
@@ -14,7 +14,7 @@
       class="fixed flex justify-between py-6 w-full lg:px-48 md:px-12 px-4 content-center bg-secondary z-10"
     >
       <div class="flex items-center">
-        <a href="/"><img src="img/spyglass-logo.svg" alt="Logo" class="h-14" /></a>
+        <a href="/"><img src="{{ get_url(path='img/spyglass-logo.svg') }}" alt="Logo" class="h-14" /></a>
       </div>
       <ul class="font-montserrat items-center hidden md:flex">
         <li class="mx-3">
@@ -34,7 +34,7 @@
         </a>
       </div>
       <div id="showMenu" class="md:hidden">
-        <img src="img/logos/Menu.svg" alt="Menu icon" />
+        <img src="{{ get_url(path='img/logos/Menu.svg') }}" alt="Menu icon" />
       </div>
     </nav>
     <div
@@ -42,7 +42,7 @@
       class="hidden px-4 py-6 fixed top-0 left-0 h-full w-full bg-secondary z-20 animate-fade-in-down"
     >
       <div id="hideMenu" class="flex justify-end">
-        <img src="img/logos/Cross.svg" alt="" class="h-16 w-16" />
+        <img src="{{ get_url(path='img/logos/Cross.svg') }}" alt="" class="h-16 w-16" />
       </div>
       <ul
         class="font-montserrat flex flex-col mx-8 my-24 items-center text-3xl"
@@ -65,7 +65,7 @@
       class="bg-black lg:px-48 md:px-12 px-4 py-14 flex flex-col items-center"
     >
       <div class="mb-4">
-        <img src="img/spyglass-icon.svg" alt="Logo" class="h-10" />
+        <img src="{{ get_url(path='img/spyglass-icon.svg') }}" alt="Logo" class="h-10" />
       </div>
       <div class="text-white font-montserrat text-sm">
         &copy; 2022 Spyglass Search Inc. All rights reserved
