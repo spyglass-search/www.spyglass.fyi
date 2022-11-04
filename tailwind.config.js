@@ -1,5 +1,5 @@
 module.exports = {
-  content: ["dist/**/*.js", "index.html"],
+  content: ["static/**/*.js", "templates/**/*.html", "content/**/*.md"],
   theme: {
     fontFamily: {
       "pt-serif": ["PT Serif", "serif"],
