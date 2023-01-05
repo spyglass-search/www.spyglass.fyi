@@ -2,53 +2,40 @@
 
 {% block content %}
 <!-- Hero -->
-<section>
-  <div class="flex flex-col lg:flex-row w-3/4 lg:w-100 mx-auto items-center">
-    <div class="mt-32 md:mt-0 md:flex-1 md:mr-10">
-      <h1 class="font-pt-serif text-5xl font-bold mb-7">Search the cloud.</h1>
-      <p class="font-pt-serif font-normal mb-7">
-        Instantly find everything you need to work faster, on your desktop and
-        across your cloud apps.
+<section class="mt-16">
+  <div class="flex flex-col mx-auto text-center px-12 overflow-hidden">
+    <div class="mb-16">
+      <h1 class="text-5xl font-bold mb-8">
+          Search your corner of the internet.
+      </h1>
+      <p class="text-lg mb-8">
+        Instantly search across your
+          <strong class="text-cyan-500">files</strong>,
+          <strong class="text-cyan-500">cloud accounts</strong>, and
+          <strong class="text-cyan-500">internet topics</strong>.
       </p>
-      <div class="font-montserrat">
+      <div class="flex flex-row items-center place-content-center gap-4">
         <a
           href="https://docs.spyglass.fyi/install.html"
-          class="py-2 px-4 text-white bg-black rounded-3xl"
+          class="py-2 px-4 text-white bg-black rounded-3xl border-2 border-black hover:bg-white hover:text-black"
         >
           Download
         </a>
       </div>
     </div>
-    <div class="flex justify-around md:block mt-8 md:mt-0 md:flex-1 mb-4">
-      <div class="relative">
-        <img
-          src="img/Highlight1.svg"
-          alt=""
-          class="absolute -top-16 -left-10"
-        />
-      </div>
-      <img
-        class="rounded mx-auto sm:w-10/12 md:w-9/12 lg:w-8/12 w-full"
-        src="https://github.com/a5huynh/spyglass/raw/main/docs/spyglass-poc.gif"
-      />
-      <div class="relative">
-        <img
-          src="img/Highlight2.svg"
-          alt=""
-          class="absolute -bottom-10 -right-6"
-        />
-      </div>
+    <div style="margin-bottom: -128px;">
+      <img class="mx-auto shadow-black shadow-2xl" src="{{ get_url(path='img/example.png') }}" width="512">
     </div>
   </div>
 </section>
 
 <!-- How it works -->
 <section
-  class="bg-black text-white lg:px-48 md:px-12 px-4 py-14 flex flex-col items-center"
+  class="bg-black text-white lg:px-24 md:px-12 px-4 py-14 flex flex-col items-center"
   id="features"
 >
   <div class="md:grid md:grid-cols-3 w-3/4 lg:w-100">
-    <div class="flex items-start font-montserrat my-6 mr-10">
+    <div class="flex items-start my-6 mr-10">
       <div>
         <h3 class="font-semibold text-xl mb-4">
           <svg
@@ -67,13 +54,13 @@
           </svg>
           Privacy First
         </h3>
-        <p class="text-gray-400">
+        <p class="text-gray-400 text-sm">
           We never see or copy your docs. Your data lives on your machine.
         </p>
       </div>
     </div>
 
-    <div class="flex items-start font-montserrat my-6 mr-10">
+    <div class="flex items-start my-6 mr-10">
       <div>
         <h3 class="font-semibold text-xl mb-4">
           <svg
@@ -92,13 +79,13 @@
           </svg>
           Lightning Fast
         </h3>
-        <p class="text-gray-400">
+        <p class="text-gray-400 text-sm">
           Designed to find exactly what you need, instantly.
         </p>
       </div>
     </div>
 
-    <div class="flex items-start font-montserrat my-6 mr-10">
+    <div class="flex items-start my-6 mr-10">
       <div>
         <h3 class="font-semibold text-xl mb-4">
           <svg
@@ -117,7 +104,7 @@
           </svg>
           Cloud Connected
         </h3>
-        <p class="text-gray-400">
+        <p class="text-gray-400 text-sm">
           Instantly search through all your favorite cloud services.
         </p>
       </div>
@@ -132,16 +119,16 @@
   <div>
     <h2
       id="pricing"
-      class="font-pt-serif text-3xl bg-left-bottom bg-no-repeat pb-8 px-16 bg-100%"
+      class="text-3xl bg-left-bottom bg-no-repeat pb-8 px-16 bg-100%"
     >
       Pricing
     </h2>
   </div>
-  <div class="flex w-full flex-col md:flex-row gap-8 xl:w-1/2 md:w-3/4 sm:w-auto">
+  <div class="flex w-full flex-col md:flex-row gap-8 2xl:w-1/2 md:w-3/4 sm:w-auto">
     <div
       class="flex-1 flex flex-col shadow-xl rounded py-5 px-8 m-8 border-2 border-black"
     >
-      <h3 class="font-pt-serif font-normal text-2xl mb-4">Personal</h3>
+      <h3 class="font-normal text-2xl mb-4">Personal</h3>
       <div
         class="font-bold text-2xl mb-4 bg-gradient-to-r from-rose-400 via-green-400 to-blue-600 inline-block text-transparent bg-clip-text"
       >
@@ -152,30 +139,30 @@
         <img
           src="img/logos/CheckedBox.svg"
           alt=""
-          class="mr-1 flex-none w-6"
+          class="mr-1 flex-none w-4"
         />
-        <p>Perfect for a single device</p>
+        <p class="text-sm">Perfect for a single device.</p>
       </div>
       <div class="flex mb-2">
         <img
           src="img/logos/CheckedBox.svg"
           alt=""
-          class="mr-1 flex-none w-6"
+          class="mr-1 flex-none w-4"
         />
-        <p>Self-hosted</p>
+        <p class="text-sm">Self-hosted.</p>
       </div>
       <div class="flex mb-6">
         <img
           src="img/logos/CheckedBox.svg"
           alt=""
-          class="mr-1 flex-none w-6"
+          class="mr-1 flex-none w-4"
         />
-        <p>Full-data privacy</p>
+        <p class="text-sm">Full-data privacy.</p>
       </div>
 
       <a
         href="https://github.com/a5huynh/spyglass/releases"
-        class="py-2 px-4 text-white bg-black rounded-3xl text-center"
+        class="py-2 px-4 text-white bg-black rounded-3xl text-center border-2 border-black hover:bg-white hover:text-black"
       >
         Download
       </a>
@@ -184,50 +171,49 @@
     <div
       class="flex-1 flex flex-col shadow-xl rounded py-5 px-8 m-8 border-2 border-cyan-500"
     >
-      <h3 class="font-pt-serif font-normal text-2xl mb-4">Pro</h3>
-      <div class="font-montserrat font-bold text-2xl mb-4">
-        $10
-        <span class="font-normal text-base"> / month</span>
+      <h3 class="font-normal text-2xl mb-4">Enterprise</h3>
+      <div class="font-bold text-2xl mb-4">
+        Contact Us
       </div>
 
       <div class="flex mb-2">
         <img
           src="img/logos/CheckedBox.svg"
           alt=""
-          class="mr-1 flex-none w-6"
+          class="mr-1 flex-none w-4"
         />
-        <p>Search across many devices</p>
+        <p class="text-sm">Search multiple devices.</p>
       </div>
       <div class="flex mb-2">
         <img
           src="img/logos/CheckedBox.svg"
           alt=""
-          class="mr-1 flex-none w-6"
+          class="mr-1 flex-none w-4"
         />
-        <p>Private crawlers</p>
+        <p class="text-sm">Built for proprietary data.</p>
       </div>
       <div class="flex mb-6">
         <img
           src="img/logos/CheckedBox.svg"
           alt=""
-          class="mr-1 flex-none w-6"
+          class="mr-1 flex-none w-4"
         />
-        <p>Shareable searches</p>
+        <p class="text-sm">Run it on your machines.</p>
       </div>
 
       <a
-        href="#signup"
-        class="py-2 px-4 text-white bg-cyan-800 rounded-3xl text-center"
+        href="mailto:enterprise@spyglass.fyi"
+        class="py-2 px-4 text-white bg-cyan-500 rounded-3xl text-center border-2 border-cyan-500 hover:bg-white hover:text-black font-bold"
       >
-        Join Waitlist
+        Contact Us
       </a>
     </div>
 
     <div
       class="flex-1 flex-col shadow-xl rounded py-5 px-8 my-8 border-2 border-black hidden"
     >
-      <h3 class="font-pt-serif font-normal text-2xl mb-4">Enterprise</h3>
-      <div class="font-montserrat font-bold text-2xl mb-4">
+      <h3 class="font-normal text-2xl mb-4">Enterprise</h3>
+      <div class="font-bold text-2xl mb-4">
         $50
         <span class="font-normal text-base"> / month</span>
       </div>
@@ -265,13 +251,16 @@
 <section
   class="py-14 lg:px-48 md:px-12 px-4 flex flex-col items-center bg-white"
 >
-  <div>
+  <div class="pb-8 px-16 text-center">
     <h2
       id="signup"
-      class="font-pt-serif text-3xl bg-left-bottom bg-no-repeat pb-8 px-16 bg-100%"
+      class="text-3xl bg-left-bottom bg-no-repeat bg-100%"
     >
-      Waitlist Signup
+      Sign-up for our newsletter
     </h2>
+    <div class="mt-4 text-sm">
+      Not ready to take the dive yet? Learn more about what we're doing with our monthly newsletter!
+    </div>
   </div>
   <div>
     <!-- Begin Mailchimp Signup Form -->
@@ -302,7 +291,7 @@
               type="submit"
               value="Subscribe"
               name="subscribe"
-              class="py-2 px-4 text-white bg-black rounded-3xl text-center"
+              class="text-sm py-2 px-4 text-white bg-black rounded-3xl text-center border-2 border-black hover:bg-white hover:text-black cursor-pointer"
               id="mc-embedded-subscribe"
             />
           </div>

@@ -1,39 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Spyglass</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, viewport-fit=cover">
+
+    <title>Spyglass Search - Search your personal cloud & internet.</title>
+
+    <link rel="short icon" type="image/x-icon"  href="{{ get_url(path='img/favicon.png') }}" />
+    <link rel="alternate icon" type="image/png" href="{{ get_url(path='img/favicon.png') }}" />
+    <link rel="icon" type="image/svg+xml" href="{{ get_url(path='img/favicon.svg') }}" />
+
     <link rel="stylesheet" href="{{ get_url(path='css/styles.css') }}" />
     <script src="{{ get_url(path='js/script.js') }}"></script>
   </head>
 
-  <body>
+  <body class="flex flex-col h-auto w-screen">
     <!-- Navigation -->
     <nav
-      class="fixed flex justify-between py-6 w-full lg:px-48 md:px-12 px-4 content-center bg-secondary z-10"
+      class="font-montserrat flex justify-between py-6 w-full lg:px-48 md:px-12 px-4 content-center bg-secondary align-middle"
     >
       <div class="flex items-center">
         <a href="/"><img src="{{ get_url(path='img/spyglass-logo.svg') }}" alt="Logo" class="h-14" /></a>
       </div>
-      <ul class="font-montserrat items-center hidden md:flex">
+      <ul class="items-center hidden md:flex">
         <li class="mx-3">
-          <a href="#features">Features</a>
+          <a href="https://blog.spyglass.fyi" class="hover:text-cyan-600">Blog</a>
         </li>
         <li class="mx-3">
-          <a href="#pricing">Pricing</a>
+          <a href="#features" class="hover:text-cyan-600">Features</a>
+        </li>
+        <li class="mx-3">
+          <a href="#pricing" class="hover:text-cyan-600">Pricing</a>
+        </li>
+        <li class="mx-3">
+          <a href="https://github.com/a5huynh/spyglass">
+            <img src="https://img.shields.io/github/stars/a5huynh/spyglass?label=Star%20us%20on%20GitHub&style=social" />
+          </a>
         </li>
       </ul>
-      <div class="font-montserrat hidden md:block mt-3">
-        <button class="mr-6 hidden">Login</button>
+      <div class="hidden flex-row md:flex items-center text-sm">
         <a
           href="https://docs.spyglass.fyi/install.html"
-          class="block py-2 px-4 text-white bg-black rounded-3xl"
+          class="py-2 px-4 text-white bg-black rounded-3xl border-2 border-black hover:bg-white hover:text-black"
         >
           Download
         </a>
       </div>
-      <div id="showMenu" class="md:hidden">
+      <div id="showMenu" class="md:hidden mt-4 mr-8">
         <img src="{{ get_url(path='img/logos/Menu.svg') }}" alt="Menu icon" />
       </div>
     </nav>
@@ -48,6 +62,9 @@
         class="font-montserrat flex flex-col mx-8 my-24 items-center text-3xl"
       >
         <li class="my-6">
+          <a href="https://blog.spyglass.fyi">Blog</a>
+        </li>
+        <li class="my-6">
           <a href="#features" class="nav-link">Features</a>
         </li>
         <li class="my-6">
@@ -56,7 +73,7 @@
       </ul>
     </div>
 
-    <div class="pt-32 bg-secondary">
+    <div class="bg-secondary">
     {% block content %}
     {% endblock content %}
     </div>
@@ -68,7 +85,7 @@
         <img src="{{ get_url(path='img/spyglass-icon.svg') }}" alt="Logo" class="h-10" />
       </div>
       <div class="text-white font-montserrat text-sm">
-        &copy; 2022 Spyglass Search Inc. All rights reserved
+        &copy; 2023 Spyglass Search Inc. All rights reserved
       </div>
       <div class="text-sm flex flex-row gap-4 mt-4">
         <a href="/privacy" class="text-white hover:text-cyan-500">Privacy Policy</a>
