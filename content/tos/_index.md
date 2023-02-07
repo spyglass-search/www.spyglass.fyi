@@ -21,7 +21,7 @@ For the purposes of these Terms and Conditions:
 - __Affiliate__ means an entity that controls, is controlled by or is under common control with a party, where "control" means ownership of 50% or more of the shares, equity interest or other securities entitled to vote for election of directors or other managing authority.
 
 - __Country__ refers to: California,  United States
-- __Company__ (referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to Spyglass Search Inc., 77 Fairmount Ave. Unit 317, Oakland CA 94611.
+- __Company__ (referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to Spyglass Search Inc.
 
 - __Device__ means any device that can access the Service such as a computer, a cellphone or a digital tablet.
 

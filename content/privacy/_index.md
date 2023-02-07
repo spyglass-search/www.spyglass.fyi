@@ -35,7 +35,7 @@ For the purposes of this Privacy Policy:
     </li>
     <li>
         <strong class="font-bold">Company</strong> (referred to as either "the Company", "We", "Us" or "Our" in this Agreement)
-         refers to Spyglass Search Inc., 77 Fairmount Avenue Unit 317, Oakland CA 94611.
+         refers to Spyglass Search Inc.
     </li>
     <li>
         <strong class="font-bold">Cookies</strong> are small files that are placed on Your computer,
