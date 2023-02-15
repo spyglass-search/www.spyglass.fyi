@@ -1,7 +1,7 @@
 let download_links = {
-  Windows: "https://github.com/a5huynh/spyglass/releases/download/v2023.2.2/Spyglass_23.2.1_x64_en-US.msi",
-  macOS: "https://github.com/a5huynh/spyglass/releases/download/v2023.2.2/Spyglass_23.2.1_universal.dmg",
-  Linux: "https://github.com/a5huynh/spyglass/releases/download/v2023.2.2/spyglass_23.2.1_amd64.AppImage",
+  Windows: "https://github.com/a5huynh/spyglass/releases/download/v2023.2.2/Spyglass_23.2.2_x64_en-US.msi",
+  macOS: "https://github.com/a5huynh/spyglass/releases/download/v2023.2.2/Spyglass_23.2.2_universal.dmg",
+  Linux: "https://github.com/a5huynh/spyglass/releases/download/v2023.2.2/spyglass_23.2.2_amd64.AppImage",
   unknown: "https://docs.spyglass.fyi/install.html"
 };
 
