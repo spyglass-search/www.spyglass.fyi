@@ -5,7 +5,7 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, viewport-fit=cover">
 
-    <title>Spyglass: Your personal search engine.</title>
+    <title>Spyglass: AI-powered search engine for online communities</title>
 
     <link rel="short icon" type="image/x-icon"  href="{{ get_url(path='img/favicon.png') }}" />
     <link rel="alternate icon" type="image/png" href="{{ get_url(path='img/favicon.png') }}" />
@@ -16,15 +16,15 @@
     <script defer data-domain="spyglass.fyi" src="https://plausible.io/js/script.js"></script>
   </head>
 
-  <body class="flex flex-col h-auto w-screen">
+  <body class="flex flex-col h-auto w-full">
     <!-- Navigation -->
     <nav
-      class="font-montserrat flex justify-between py-6 w-full lg:px-48 md:px-12 px-4 content-center bg-secondary align-middle"
+      class="font-montserrat flex flex-row justify-between px-8 py-6 md:px-16 lg:px-32 2xl:px-64 w-full content-center bg-secondary align-middle items-center"
     >
       <div class="flex items-center">
         <a href="/"><img src="{{ get_url(path='img/spyglass-logo.svg') }}" alt="Logo" class="h-14" /></a>
       </div>
-      <ul class="items-center hidden md:flex">
+      <ul class="items-center hidden md:flex flex-row gap-2">
         <li class="mx-3">
           <a href="https://lenses.spyglass.fyi" class="hover:text-cyan-600">Lenses</a>
         </li>
@@ -32,10 +32,9 @@
           <a href="https://blog.spyglass.fyi" class="hover:text-cyan-600">Blog</a>
         </li>
         <li class="mx-3">
-          <a href="#features" class="hover:text-cyan-600">Features</a>
-        </li>
-        <li class="mx-3">
-          <a href="#pricing" class="hover:text-cyan-600">Pricing</a>
+          <a href="https://github.com/spyglass-search/spyglass" class="hover:text-cyan-600">
+            Desktop
+          </a>
         </li>
         <li class="mx-3">
           <a href="https://github.com/spyglass-search/spyglass">
@@ -43,14 +42,15 @@
           </a>
         </li>
       </ul>
-      <div class="hidden flex-row md:flex items-center text-sm">
+      <div class="hidden md:inline-block">
         <a
-          href="https://docs.spyglass.fyi/install.html"
-          data-link="download"
-          data-update="false"
-          class="py-2 px-4 text-white bg-black rounded-3xl border-2 border-black hover:bg-white hover:text-black"
+          href="https://search.spyglass.fyi"
+          class="py-2 px-2 text-white bg-cyan-600 border-2 border-cyan-600 rounded-lg hover:bg-white hover:text-black flex flex-row gap-2 items-center"
         >
-          Download
+          <span>Start Searching</span>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12.75 15l3-3m0 0l-3-3m3 3h-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
         </a>
       </div>
       <div id="showMenu" class="md:hidden mt-4 mr-8">
@@ -68,13 +68,21 @@
         class="font-montserrat flex flex-col mx-8 my-24 items-center text-3xl"
       >
         <li class="my-6">
-          <a href="https://blog.spyglass.fyi">Blog</a>
+          <a href="https://lenses.spyglass.fyi" class="nav-link">Lenses</a>
         </li>
         <li class="my-6">
-          <a href="#features" class="nav-link">Features</a>
+          <a href="https://blog.spyglass.fyi" class="nav-link">Blog</a>
         </li>
         <li class="my-6">
-          <a href="#pricing" class="nav-link">Pricing</a>
+          <a href="https://github.com/spyglass-search/spyglass" class="nav-link">Desktop Search</a>
+        </li>
+        <li>
+          <a
+            href="https://search.spyglass.fyi"
+            class="py-2 px-4 text-white bg-cyan-600 border-2 border-cyan-600 rounded-lg hover:bg-white hover:text-black flex flex-row gap-2 items-center"
+          >
+            <span>Start Searching</span>
+          </a>
         </li>
       </ul>
     </div>
@@ -85,17 +93,17 @@
     </div>
     <!-- Footer -->
     <section
-      class="bg-black lg:px-48 md:px-12 px-4 py-14 flex flex-col items-center"
+      class="bg-cyan-800 lg:px-48 md:px-12 px-4 py-8 flex flex-col items-center gap-2"
     >
-      <div class="mb-4">
+      <div>
         <img src="{{ get_url(path='img/spyglass-icon.svg') }}" alt="Logo" class="h-10" />
+      </div>
+      <div class="text-sm flex flex-row gap-4">
+        <a href="/privacy" class="text-white hover:text-cyan-500">Privacy Policy</a>
+        <a href="/tos" class="text-white hover:text-cyan-500">Terms of Service</a>
       </div>
       <div class="text-white font-montserrat text-sm">
         &copy; 2023 Spyglass Search Inc. All rights reserved
-      </div>
-      <div class="text-sm flex flex-row gap-4 mt-4">
-        <a href="/privacy" class="text-white hover:text-cyan-500">Privacy Policy</a>
-        <a href="/tos" class="text-white hover:text-cyan-500">Terms of Service</a>
       </div>
     </section>
   </body>

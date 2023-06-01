@@ -25,7 +25,7 @@ window.addEventListener("load", function () {
     }));
 
   // Update download links based on detected os
-  update_download_links();
+  // update_download_links();
 });
 
 function update_download_links() {
