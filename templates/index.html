@@ -1,270 +1,261 @@
-{% extends "base.html" %}
-
-{% block content %}
+{% extends "base.html" %} {% block content %}
 <!-- Hero -->
-<section class="mt-16">
-  <div class="flex flex-col mx-auto text-center px-12 overflow-hidden">
-    <div class="mb-16">
-      <h1 class="text-5xl font-bold mb-8">
-          Search your corner of the internet.
+<section class="px-12 lg:px-32 2xl:px-64 my-8">
+  <div
+    class="mx-auto overflow-hidden grid grid-cols-1 md:grid-cols-2 relative gap-16"
+  >
+    <div class="flex flex-col gap-4">
+      <h1 class="text-3xl md:text-4xl font-bold font-montserrat">
+        Search your corner of the internet.
       </h1>
-      <p class="text-lg mb-8">
-        Instantly search across all your
-          <strong class="text-cyan-500">files</strong>,
-          <strong class="text-cyan-500">cloud accounts</strong>, and
-          <strong class="text-cyan-500">internet topics</strong>.
+      <p class="text-base md:text-lg text-cyan-800">
+        AI-powered search across all your
+        <strong class="text-cyan-800">files</strong>,
+        <strong class="text-cyan-800">cloud accounts</strong>, and
+        <strong class="text-cyan-800">online communities</strong>.
       </p>
-      <div class="flex flex-col items-center place-content-center">
+      <div>
+        <div class="text-xs mb-4">Search through:</div>
+        <ul class="flex flex-row gap-8 items-start">
+          <li class="flex flex-col items-center text-xs gap-1">
+            <svg
+              class="h-8 w-8"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418"
+              />
+            </svg>
+            <span>Websites</span>
+          </li>
+
+          <li class="flex flex-col items-center text-xs gap-1">
+            <svg
+              class="h-8 w-8"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 18.75a6 6 0 006-6v-1.5m-6 7.5a6 6 0 01-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15.75a3 3 0 01-3-3V4.5a3 3 0 116 0v8.25a3 3 0 01-3 3z"
+              />
+            </svg>
+            <span>Podcasts</span>
+          </li>
+
+          <li class="flex flex-col items-center text-xs gap-1">
+            <svg
+              class="h-8 w-8"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>Google Drive</title>
+              <path
+                d="M12.01 1.485c-2.082 0-3.754.02-3.743.047.01.02 1.708 3.001 3.774 6.62l3.76 6.574h3.76c2.081 0 3.753-.02 3.742-.047-.005-.02-1.708-3.001-3.775-6.62l-3.76-6.574zm-4.76 1.73a789.828 789.861 0 0 0-3.63 6.319L0 15.868l1.89 3.298 1.885 3.297 3.62-6.335 3.618-6.33-1.88-3.287C8.1 4.704 7.255 3.22 7.25 3.214zm2.259 12.653-.203.348c-.114.198-.96 1.672-1.88 3.287a423.93 423.948 0 0 1-1.698 2.97c-.01.026 3.24.042 7.222.042h7.244l1.796-3.157c.992-1.734 1.85-3.23 1.906-3.323l.104-.167h-7.249z"
+              />
+            </svg>
+            <span>GDrive</span>
+          </li>
+
+          <li class="flex flex-col items-center text-xs gap-1">
+            <svg
+              class="h-8 w-8"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>GitHub</title>
+              <path
+                d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+              />
+            </svg>
+            <span>GitHub</span>
+            <span class="text-neutral-400">soon</span>
+          </li>
+
+          <li class="flex flex-col items-center text-xs gap-1">
+            <svg
+              class="h-8 w-8"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>YouTube</title>
+              <path
+                d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+              />
+            </svg>
+            <span>YouTube</span>
+            <span class="text-neutral-400">soon</span>
+          </li>
+
+          <li class="flex flex-col items-center text-xs gap-1 text-center">
+            <svg
+              class="h-8 w-8"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM12.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM18.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+              />
+            </svg>
+            <span>and more!</span>
+          </li>
+        </ul>
+      </div>
+      <div class="flex flex-col">
         <a
-          href="https://docs.spyglass.fyi/install.html"
-          data-link="download"
-          class="py-2 px-4 text-white bg-black rounded-3xl border-2 border-black hover:bg-white hover:text-black"
+          href="https://search.spyglass.fyi"
+          class="py-2 px-4 text-white bg-cyan-600 border-2 border-cyan-600 rounded-lg hover:bg-white hover:text-black flex flex-row w-fit gap-2"
         >
-          Download
+          <span>Start Searching</span>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12.75 15l3-3m0 0l-3-3m3 3h-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
         </a>
-        <div class="text-xs mt-2 text-gray-500 hover:underline">
-          <a href="https://docs.spyglass.fyi/install.html">View all platforms</a>
+        <div class="text-xs mt-2 text-gray-500 hover:underline hidden">
+          <a href="https://docs.spyglass.fyi/install.html"
+            >View all platforms</a
+          >
         </div>
       </div>
     </div>
-    <div style="margin-bottom: -128px;">
-      <img class="mx-auto shadow-black shadow-2xl" src="{{ get_url(path='img/example.png') }}" width="512">
+    <div class="flex flex-row place-content-center pb-8">
+      <iframe
+        class="rounded-lg min-h-[240px] lg:min-h-[360px]"
+        width="100%"
+        src="https://www.youtube.com/embed/S0kxrb1oVM0"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen="{true}"
+      >
+      </iframe>
     </div>
   </div>
 </section>
 
-<!-- How it works -->
+<section class="px-12 lg:px-32 2xl:px-64 py-16 bg-black text-white flex flex-col items-center">
+  <div class="mx-auto text-2xl font-bold mb-8">
+    Featured Lenses
+  </div>
+  <div class="mx-auto overflow-hidden grid grid-cols-1 md:grid-cols-3 relative gap-4">
+    <a
+      href="https://search.spyglass.fyi/lens/atp-podcast"
+      class="flex flex-col justify-between border border-neutral-600 p-4 rounded-md hover:border-cyan-500 cursor-pointer"
+    >
+      <div class="pb-2 font-semibold">💻&nbsp;&nbsp;Accidental Tech Podcast</div>
+      <div class="text-xs text-neutral-400 leading-relaxed">
+        Three nerds discussing tech, Apple, programming, and loosely related matters.
+        Hosted by Marco Arment, Casey Liss, and John Siracusa.
+      </div>
+      <div class="flex flex-row pt-8 mt-auto">
+        <div class="text-xs bg-cyan-600 rounded px-2 py-1 flex flex-row gap-1 border border-cyan-600 hover:bg-white hover:text-black">
+          <svg
+            class="w-4 h-4"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"
+          >
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 15.75l-2.489-2.489m0 0a3.375 3.375 0 10-4.773-4.773 3.375 3.375 0 004.774 4.774zM21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          Try now
+        </div>
+      </div>
+    </a>
+    <a
+      href="https://search.spyglass.fyi/lens/mac-power-users"
+      class="flex flex-col justify-between border border-neutral-600 p-4 rounded-md hover:border-cyan-500 cursor-pointer"
+    >
+      <div class="pb-2 font-semibold">🍎 Mac Power Users</div>
+      <div class="text-xs text-neutral-400 leading-relaxed">
+        Learn about getting the most from your Apple technology with focused
+        topics and workflow guests. Creating Mac Power Users, one geek at a time
+        since 2009.
+      </div>
+      <div class="flex flex-row pt-8 mt-auto">
+        <div class="text-xs bg-cyan-600 rounded px-2 py-1 flex flex-row gap-1 border border-cyan-600 hover:bg-white hover:text-black">
+          <svg
+            class="w-4 h-4"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"
+          >
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 15.75l-2.489-2.489m0 0a3.375 3.375 0 10-4.773-4.773 3.375 3.375 0 004.774 4.774zM21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          Try now
+        </div>
+      </div>
+    </a>
+    <a
+      href="https://search.spyglass.fyi/lens/20minutevc"
+      class="flex flex-col justify-between border border-neutral-600 p-4 rounded-md hover:border-cyan-500 cursor-pointer"
+    >
+      <div class="pb-2 font-semibold">⏳ The 20 Minute VC</div>
+      <div class="text-xs text-neutral-400 leading-relaxed">
+        The Twenty Minute VC (20VC) interviews the world's greatest venture
+        capitalists with prior guests including Sequoia's Doug Leone and
+        Benchmark's Bill Gurley.
+      </div>
+      <div class="flex flex-row pt-8 mt-auto">
+        <div class="text-xs bg-cyan-600 rounded px-2 py-1 flex flex-row gap-1 border border-cyan-600 hover:bg-white hover:text-black">
+          <svg
+            class="w-4 h-4"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"
+          >
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 15.75l-2.489-2.489m0 0a3.375 3.375 0 10-4.773-4.773 3.375 3.375 0 004.774 4.774zM21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          Try now
+        </div>
+      </div>
+    </a>
+  </div>
+</section>
+
 <section
-  class="bg-black text-white lg:px-24 md:px-12 px-4 py-14 flex flex-col items-center"
-  id="features"
+  class="px-12 lg:px-32 2xl:px-64 pt-8 flex flex-col items-center bg-secondary overflow-hidden gap-4"
 >
-  <div class="md:grid md:grid-cols-3 w-3/4 lg:w-100">
-    <div class="flex items-start my-6 mr-10">
-      <div>
-        <h3 class="font-semibold text-xl mb-4">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="w-6 h-6 inline-block align-text-top"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z"
-            />
-          </svg>
-          Privacy First
-        </h3>
-        <p class="text-gray-400 text-sm">
-          We never see or copy your docs. Your data lives on your machine.
-        </p>
-      </div>
-    </div>
-
-    <div class="flex items-start my-6 mr-10">
-      <div>
-        <h3 class="font-semibold text-xl mb-4">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="w-6 h-6 inline-block align-text-top"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"
-            />
-          </svg>
-          Lightning Fast
-        </h3>
-        <p class="text-gray-400 text-sm">
-          Designed to find exactly what you need, instantly.
-        </p>
-      </div>
-    </div>
-
-    <div class="flex items-start my-6 mr-10">
-      <div>
-        <h3 class="font-semibold text-xl mb-4">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="w-6 h-6 inline-block align-text-top"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M2.25 15a4.5 4.5 0 004.5 4.5H18a3.75 3.75 0 001.332-7.257 3 3 0 00-3.758-3.848 5.25 5.25 0 00-10.233 2.33A4.502 4.502 0 002.25 15z"
-            />
-          </svg>
-          Cloud Connected
-        </h3>
-        <p class="text-gray-400 text-sm">
-          Instantly search through all your favorite cloud services.
-        </p>
-      </div>
-    </div>
+  <div class="text-xl mx-auto font-semibold">
+    Looking for our self-hosted solution?
   </div>
-</section>
-
-<!-- Pricing -->
-<section
-  class="py-14 px-4 flex flex-col items-center bg-secondary"
->
-  <div>
-    <h2
-      id="pricing"
-      class="text-3xl bg-left-bottom bg-no-repeat pb-8 px-16 bg-100%"
-    >
-      Pricing
-    </h2>
+  <div class="text-xl mx-auto font-semibold">
+    <a href="https://github.com/spyglass-search/spyglass" target="_blank">
+      <img src="https://img.shields.io/github/stars/spyglass-search/spyglass?style=social&label=View+on+GitHub" />
+    </a>
   </div>
-  <div class="flex w-full flex-col md:flex-row gap-8 2xl:w-1/2 md:w-3/4 sm:w-auto">
-    <div
-      class="flex-1 flex flex-col shadow-xl rounded py-5 px-8 m-8 border-2 border-black"
-    >
-      <h3 class="font-normal text-2xl mb-4">Personal</h3>
-      <div
-        class="font-bold text-2xl mb-4 bg-gradient-to-r from-rose-400 via-green-400 to-blue-600 inline-block text-transparent bg-clip-text"
-      >
-        <div>Free!</div>
-      </div>
-
-      <div class="flex mb-2">
-        <img
-          src="img/logos/CheckedBox.svg"
-          alt=""
-          class="mr-1 flex-none w-4"
-        />
-        <p class="text-sm">Perfect for a single device.</p>
-      </div>
-      <div class="flex mb-2">
-        <img
-          src="img/logos/CheckedBox.svg"
-          alt=""
-          class="mr-1 flex-none w-4"
-        />
-        <p class="text-sm">Self-hosted.</p>
-      </div>
-      <div class="flex mb-6">
-        <img
-          src="img/logos/CheckedBox.svg"
-          alt=""
-          class="mr-1 flex-none w-4"
-        />
-        <p class="text-sm">Full-data privacy.</p>
-      </div>
-
-      <a
-        href="https://github.com/spyglass-search/spyglass/releases"
-        class="py-2 px-4 text-white bg-black rounded-3xl text-center border-2 border-black hover:bg-white hover:text-black"
-        data-link="download"
-      >
-        Download
-      </a>
-    </div>
-
-    <div
-      class="flex-1 flex flex-col shadow-xl rounded py-5 px-8 m-8 border-2 border-cyan-500"
-    >
-      <h3 class="font-normal text-2xl mb-4">Enterprise</h3>
-      <div class="font-bold text-2xl mb-4">
-        Contact Us
-      </div>
-
-      <div class="flex mb-2">
-        <img
-          src="img/logos/CheckedBox.svg"
-          alt=""
-          class="mr-1 flex-none w-4"
-        />
-        <p class="text-sm">Search multiple devices.</p>
-      </div>
-      <div class="flex mb-2">
-        <img
-          src="img/logos/CheckedBox.svg"
-          alt=""
-          class="mr-1 flex-none w-4"
-        />
-        <p class="text-sm">Built for proprietary data.</p>
-      </div>
-      <div class="flex mb-6">
-        <img
-          src="img/logos/CheckedBox.svg"
-          alt=""
-          class="mr-1 flex-none w-4"
-        />
-        <p class="text-sm">Run it on your machines.</p>
-      </div>
-
-      <a
-        href="mailto:enterprise@spyglass.fyi"
-        class="py-2 px-4 text-white bg-cyan-500 rounded-3xl text-center border-2 border-cyan-500 hover:bg-white hover:text-black font-bold"
-      >
-        Contact Us
-      </a>
-    </div>
-
-    <div
-      class="flex-1 flex-col shadow-xl rounded py-5 px-8 my-8 border-2 border-black hidden"
-    >
-      <h3 class="font-normal text-2xl mb-4">Enterprise</h3>
-      <div class="font-bold text-2xl mb-4">
-        $50
-        <span class="font-normal text-base"> / month</span>
-      </div>
-
-      <div class="flex mb-2">
-        <img
-          src="img/logos/CheckedBox.svg"
-          alt=""
-          class="mr-1 flex-none w-6"
-        />
-        <p>Benefit #1</p>
-      </div>
-      <div class="flex mb-2">
-        <img
-          src="img/logos/CheckedBox.svg"
-          alt=""
-          class="mr-1 flex-none w-6"
-        />
-        <p>Benefit #2</p>
-      </div>
-      <div class="flex">
-        <img
-          src="img/logos/CheckedBox.svg"
-          alt=""
-          class="mr-1 flex-none w-6"
-        />
-        <p>Benefit #3</p>
-      </div>
-
-      <button class="rounded-xl text-lg py-3 mt-4">Choose plan</button>
-    </div>
+  <div class="-mb-[380px]">
+    <img class="mx-auto shadow-black shadow-2xl" src="{{ get_url(path='img/example.png') }}" width="512">
   </div>
 </section>
 
 <section
-  class="py-14 lg:px-48 md:px-12 px-4 flex flex-col items-center bg-white"
+  class="py-14 lg:px-48 md:px-12 px-4 flex-col items-center bg-white hidden"
 >
   <div class="pb-8 px-16 text-center">
-    <h2
-      id="signup"
-      class="text-3xl bg-left-bottom bg-no-repeat bg-100%"
-    >
+    <h2 id="signup" class="text-3xl bg-left-bottom bg-no-repeat bg-100%">
       Sign-up for our newsletter
     </h2>
     <div class="mt-4 text-sm">
-      Not ready to take the dive yet? Learn more about what we're doing with our monthly newsletter!
+      Not ready to take the dive yet? Learn more about what we're doing with our
+      monthly newsletter!
     </div>
   </div>
   <div>
@@ -278,7 +269,10 @@
         class="validate"
         target="_self"
       >
-        <div id="mc_embed_signup_scroll" class="flex flex-col text-center md:flex-row gap-4 content-center">
+        <div
+          id="mc_embed_signup_scroll"
+          class="flex flex-col text-center md:flex-row gap-4 content-center"
+        >
           <div class="mc-field-group">
             <input
               type="email"
