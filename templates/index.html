@@ -33,7 +33,7 @@
                 d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418"
               />
             </svg>
-            <span>Web</span>
+            <span>Websites</span>
           </li>
 
           <li class="flex flex-col items-center text-xs gap-1">
@@ -162,12 +162,13 @@
     <a
       href="https://search.spyglass.fyi/lens/atp-podcast"
       class="flex flex-col justify-between border border-neutral-600 p-4 rounded-md hover:border-cyan-500 cursor-pointer"
-      ><div class="pb-2">💻&nbsp;&nbsp;Accidental Tech Podcast</div>
-      <div class="text-xs text-neutral-400">
-        Search through the last 100 episodes of a podcast discussing tech,
-        Apple, and programming.
+    >
+      <div class="pb-2 font-semibold">💻&nbsp;&nbsp;Accidental Tech Podcast</div>
+      <div class="text-xs text-neutral-400 leading-relaxed">
+        Three nerds discussing tech, Apple, programming, and loosely related matters.
+        Hosted by Marco Arment, Casey Liss, and John Siracusa.
       </div>
-      <div class="flex flex-row pt-4 justify-between items-center mt-auto">
+      <div class="flex flex-row pt-8 mt-auto">
         <div class="text-xs bg-cyan-600 rounded px-2 py-1 flex flex-row gap-1 border border-cyan-600 hover:bg-white hover:text-black">
           <svg
             class="w-4 h-4"
@@ -184,13 +185,13 @@
       href="https://search.spyglass.fyi/lens/mac-power-users"
       class="flex flex-col justify-between border border-neutral-600 p-4 rounded-md hover:border-cyan-500 cursor-pointer"
     >
-      <div class="pb-2">🍎 Mac Power Users</div>
-      <div class="text-xs text-neutral-400">
+      <div class="pb-2 font-semibold">🍎 Mac Power Users</div>
+      <div class="text-xs text-neutral-400 leading-relaxed">
         Learn about getting the most from your Apple technology with focused
         topics and workflow guests. Creating Mac Power Users, one geek at a time
         since 2009.
       </div>
-      <div class="flex flex-row pt-4 justify-between items-center mt-auto">
+      <div class="flex flex-row pt-8 mt-auto">
         <div class="text-xs bg-cyan-600 rounded px-2 py-1 flex flex-row gap-1 border border-cyan-600 hover:bg-white hover:text-black">
           <svg
             class="w-4 h-4"
@@ -207,13 +208,13 @@
       href="https://search.spyglass.fyi/lens/20minutevc"
       class="flex flex-col justify-between border border-neutral-600 p-4 rounded-md hover:border-cyan-500 cursor-pointer"
     >
-      <div class="pb-2">⏳ The 20 Minute VC</div>
-      <div class="text-xs text-neutral-400">
+      <div class="pb-2 font-semibold">⏳ The 20 Minute VC</div>
+      <div class="text-xs text-neutral-400 leading-relaxed">
         The Twenty Minute VC (20VC) interviews the world's greatest venture
         capitalists with prior guests including Sequoia's Doug Leone and
         Benchmark's Bill Gurley.
       </div>
-      <div class="flex flex-row pt-4 justify-between items-center mt-auto">
+      <div class="flex flex-row pt-8 mt-auto">
         <div class="text-xs bg-cyan-600 rounded px-2 py-1 flex flex-row gap-1 border border-cyan-600 hover:bg-white hover:text-black">
           <svg
             class="w-4 h-4"
@@ -226,6 +227,22 @@
         </div>
       </div>
     </a>
+  </div>
+</section>
+
+<section
+  class="px-12 lg:px-32 2xl:px-64 pt-8 flex flex-col items-center bg-secondary overflow-hidden gap-4"
+>
+  <div class="text-xl mx-auto font-semibold">
+    Looking for our self-hosted solution?
+  </div>
+  <div class="text-xl mx-auto font-semibold">
+    <a href="https://github.com/spyglass-search/spyglass" target="_blank">
+      <img src="https://img.shields.io/github/stars/spyglass-search/spyglass?style=social&label=View+on+GitHub" />
+    </a>
+  </div>
+  <div class="-mb-[380px]">
+    <img class="mx-auto shadow-black shadow-2xl" src="{{ get_url(path='img/example.png') }}" width="512">
   </div>
 </section>
 
