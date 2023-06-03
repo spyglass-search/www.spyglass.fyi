@@ -856,6 +856,10 @@ select{
   height: 1rem;
 }
 
+.min-h-\[512px\]{
+  min-height: 512px;
+}
+
 .min-h-\[240px\]{
   min-height: 240px;
 }
@@ -880,6 +884,10 @@ select{
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+}
+
+.w-\[400px\]{
+  width: 400px;
 }
 
 .w-4{
@@ -1005,6 +1013,10 @@ select{
 
 .border-2{
   border-width: 2px;
+}
+
+.border-0{
+  border-width: 0px;
 }
 
 .border{
@@ -1259,6 +1271,11 @@ select{
 .shadow-black{
   --tw-shadow-color: black;
   --tw-shadow: var(--tw-shadow-colored);
+}
+
+.outline-none{
+  outline: 2px solid transparent;
+  outline-offset: 2px;
 }
 
 html, body {
