@@ -8,7 +8,7 @@
       content="width=device-width, initial-scale=1.0, maximum-scale=1, viewport-fit=cover"
     />
 
-    <title>Spyglass: AI-powered search engine for online communities</title>
+    <title>Spyglass</title>
 
     <link
       rel="short icon"
@@ -36,54 +36,9 @@
   </head>
 
   <body
-    class="flex flex-col h-screen w-full bg-secondary place-content-center py-8 text-base-200"
+    class="flex flex-col w-full bg-secondary place-content-center py-8 text-base-200"
   >
-    <div class="hero pt-32">
-      <div class="hero-content text-center flex flex-col">
-        <div class="max-w-md flex flex-col items-center gap-6">
-          <img
-            src="{{ get_url(path='img/spyglass-logo.svg') }}"
-            alt="Logo"
-            class="h-16"
-          />
-          <p class="text-sm">Opinionated search & language model tools.</p>
-          <p>
-            <a href="https://github.com/spyglass-search/spyglass">
-              <img
-                src="https://img.shields.io/github/stars/spyglass-search/spyglass?style=social"
-              />
-            </a>
-          </p>
-          <ul class="items-center flex flex-row text-sm gap-6">
-            <li class="border p-2 rounded">
-              <a
-                href="https://sightglass.ai"
-                class="link link-accent"
-                target="_blank"
-              >
-                Sightglass Cloudflow
-              </a>
-              <div class="text-xs text-gray-400">
-                Structured language model APIs and Workflows. Automate the
-                Boring!
-              </div>
-            </li>
-            <li class="border p-2 rounded">
-              <a
-                href="https://github.com/spyglass-search/spyglass"
-                class="link link-accent"
-                target="_blank"
-              >
-                Personal Search
-              </a>
-              <div class="text-xs text-gray-400">
-                Open-source desktop + cloud search app
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
+    {% block content %}{% endblock %}
     <div class="flex flex-col text-xs bg-secondary items-center mt-auto gap-2">
       <div class="flex flex-row gap-4">
         <a href="/privacy" class="link link-accent">Privacy Policy</a>

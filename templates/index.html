@@ -1,4 +1,48 @@
 {% extends "base.html" %}
 {% block content %}
-aflkjda
+<div class="hero h-screen">
+    <div class="hero-content text-center flex flex-col">
+        <div class="max-w-md flex flex-col items-center gap-6">
+        <img
+            src="{{ get_url(path='img/spyglass-logo.svg') }}"
+            alt="Logo"
+            class="h-16"
+        />
+        <p class="text-sm">Opinionated search & language model tools.</p>
+        <p>
+            <a href="https://github.com/spyglass-search/spyglass">
+            <img
+                src="https://img.shields.io/github/stars/spyglass-search/spyglass?style=social"
+            />
+            </a>
+        </p>
+        <ul class="items-center grid grid-cols-1 text-sm gap-6">
+            <li class="border p-4 rounded">
+            <a
+                href="https://sightglass.ai"
+                class="link link-accent"
+                target="_blank"
+            >
+                Sightglass AI
+            </a>
+            <div class="text-xs text-gray-400">
+                AI powered automation. Automate the boring stuff!
+            </div>
+            </li>
+            <li class="border p-4 rounded">
+            <a
+                href="https://github.com/spyglass-search/spyglass"
+                class="link link-accent"
+                target="_blank"
+            >
+                Personal Search
+            </a>
+            <div class="text-xs text-gray-400">
+                Open-source desktop + cloud search app
+            </div>
+            </li>
+        </ul>
+        </div>
+    </div>
+</div>
 {% endblock %}
