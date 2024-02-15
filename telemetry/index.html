@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1, viewport-fit=cover"
+    />
+
+    <title>Spyglass</title>
+
+    <link
+      rel="short icon"
+      type="image/x-icon"
+      href="https://www.spyglass.fyi/img/favicon.png"
+    />
+    <link
+      rel="alternate icon"
+      type="image/png"
+      href="https://www.spyglass.fyi/img/favicon.png"
+    />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="https://www.spyglass.fyi/img/favicon.svg"
+    />
+
+    <link rel="stylesheet" href="https://www.spyglass.fyi/css/styles.css" />
+    <script src="https://www.spyglass.fyi/js/script.js"></script>
+    <script
+      defer
+      data-domain="spyglass.fyi"
+      src="https://plausible.io/js/script.js"
+    ></script>
+  </head>
+
+  <body
+    class="flex flex-col w-full bg-secondary place-content-center py-8 text-base-200"
+  >
+    
+<section class="py-16">
+    <div class="w-3/4 2xl:w-1/2 mx-auto bg-neutral-300 px-16 py-8 rounded">
+        <div class="mb-8">
+            <h1 class="text-4xl font-bold text-center font-pt-serif">
+                Telemetry
+            </h1>
+            <p class="text-center italic text-neutral-500">
+                Last updated: November 4, 2022
+            </p>
+        </div>
+
+        <div class="flex flex-col gap-4 leading-relaxed">
+        <p>Spyglass collects usage data (only metadata, never any search terms or results) to
+measure feature usage, discover product issues, and to help guide what we prioritize.
+Selling usage data will never be part of our business model, it is used solely to
+improve the end-user experience.</p>
+<p>We use <strong><a href="https://sentry.io">Sentry</a></strong> for crash reporting and <strong><a href="https://mixpanel.com">MixPanel</a></strong>
+for telemetry.</p>
+<h2 id="exhaustive-telemetry-table">Exhaustive Telemetry Table</h2>
+<table><thead><tr><th>Event Name</th><th>Description</th></tr></thead><tbody>
+<tr><td><code>authorize_connection</code></td><td>OAuth connection started with an integration</td></tr>
+<tr><td><code>install_lens</code></td><td>Request to install a lens from our community index</td></tr>
+<tr><td><code>num_search_results</code></td><td>Number of search results after a search</td></tr>
+<tr><td><code>search</code></td><td>Search bar activated</td></tr>
+<tr><td><code>update_check</code></td><td>Sends the current version to check for an update</td></tr>
+</tbody></table>
+
+        </div>
+    </div>
+</section>
+
+    <div class="flex flex-col text-xs bg-secondary items-center mt-auto gap-2">
+      <div class="flex flex-row gap-4">
+        <a href="/privacy" class="link link-accent">Privacy Policy</a>
+        <a href="/tos" class="link link-accent">Terms of Service</a>
+        <a href="mailto:founders@spyglass.fyi" class="link link-accent"
+          >Contact Us</a
+        >
+      </div>
+      <div class="font-montserrat">
+        &copy; 2023 Spyglass Search Inc. All rights reserved
+      </div>
+    </div>
+  </body>
+</html>
